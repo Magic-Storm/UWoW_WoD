@@ -2,7 +2,8 @@
 SQLyog Ultimate v9.02 
 MySQL - 5.5.29-30.0-log : Database - 505_auth
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -196,6 +197,44 @@ CREATE TABLE `uptime` (
   `revision` varchar(255) NOT NULL DEFAULT 'Trinitycore',
   PRIMARY KEY (`realmid`,`starttime`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Uptime system';
+
+/*Table structure for table `battlenet_components` */
+
+DROP TABLE IF EXISTS `battlenet_components`;
+
+CREATE TABLE `battlenet_components` (
+  `Program` varchar(4) NOT NULL,
+  `Platform` varchar(4) NOT NULL,
+  `Build` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`Program`,`Platform`,`Build`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `battlenet_components` (`Program`, `Platform`, `Build`) VALUES
+('Bnet', 'Mc64', 26487),
+('Bnet', 'Mc64', 37165),
+('Bnet', 'Win', 26487),
+('Bnet', 'Win', 37165),
+('Bnet', 'Wn64', 26487),
+('Bnet', 'Wn64', 37165),
+('WoW', 'base', 17520),
+('WoW', 'base', 19793),
+('WoW', 'deDE', 0),
+('WoW', 'enGB', 17520),
+('WoW', 'enGB', 19057),
+('WoW', 'enUS', 0),
+('WoW', 'esES', 0),
+('WoW', 'esMX', 0),
+('WoW', 'frFR', 0),
+('WoW', 'koKR', 0),
+('WoW', 'Mc64', 17538),
+('WoW', 'Mc64', 19865),
+('WoW', 'ruRU', 0),
+('WoW', 'Win', 17538),
+('WoW', 'Win', 19865),
+('WoW', 'Wn64', 17538),
+('WoW', 'Wn64', 19865),
+('WoW', 'zhCN', 0),
+('WoW', 'zhTW', 0);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
