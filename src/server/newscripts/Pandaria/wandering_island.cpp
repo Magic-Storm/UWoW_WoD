@@ -4767,7 +4767,7 @@ public:
 
         void SendState(Player* p, bool enable)
         {
-            //! 6.1.2
+            //! 6.2.4
             //WorldPacket data(SMSG_INIT_WORLD_STATES, 34); CRITICAL
             //data << uint32(860);                                    // mapid
             //data << uint32(5736);                                   // zone id
@@ -5169,7 +5169,7 @@ public:
             events.ScheduleEvent(EVENT_6, t += 1000);            //18:12:55.000
             events.ScheduleEvent(EVENT_7, t += 2000);            //18:12:57.000
             events.ScheduleEvent(EVENT_8, t += 9000);            //18:13:06.000
-            events.ScheduleEvent(EVENT_CZI_0, t += 3000);        //18:13:09.000 Message: Да, вождь.
+            events.ScheduleEvent(EVENT_CZI_0, t += 3000);        //18:13:09.000 Message: пїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ.
             events.ScheduleEvent(EVENT_9, t += 3000);            //18:13:12.000
             events.ScheduleEvent(EVENT_10, t += 3000);           //18:13:15.000
             events.ScheduleEvent(EVENT_11, t += 8000);           //18:13:23.000
@@ -5178,7 +5178,7 @@ public:
             events.ScheduleEvent(EVENT_14, t += 13000);          //18:13:47.000
             events.ScheduleEvent(EVENT_15, t += 5000);           //18:13:52.000 
             events.ScheduleEvent(EVENT_16, t += 11000);          //18:14:03.000
-            events.ScheduleEvent(EVENT_CZI_1, t += 3000);        //18:14:06.000 Message: Да... Да, конечно...
+            events.ScheduleEvent(EVENT_CZI_1, t += 3000);        //18:14:06.000 Message: пїЅпїЅ... пїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ...
             events.ScheduleEvent(EVENT_17, t += 4000);           //18:14:10.000
             events.ScheduleEvent(EVENT_18, t += 1000);           //18:14:11.000
             events.ScheduleEvent(EVENT_19, t += 2000);           //18:14:13.000

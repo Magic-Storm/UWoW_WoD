@@ -2212,7 +2212,7 @@ enum SpellPreventionType
 };
 
 
-enum GameobjectTypes // 6.2.2
+enum GameobjectTypes // 6.2.4
 {
     GAMEOBJECT_TYPE_DOOR                        = 0,
     GAMEOBJECT_TYPE_BUTTON                      = 1,
@@ -3873,7 +3873,7 @@ enum CreatureEliteType
 };
 
 // values based at Holidays.dbc 
-enum HolidayIds //< 6.2.2
+enum HolidayIds //< 6.2.4
 {
     HOLIDAY_NONE                     = 0,
 

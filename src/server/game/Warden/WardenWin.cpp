@@ -47,7 +47,7 @@ void WardenWin::Init(WorldSession* session, BigNumber *k)
 {
     _session = session;
     // Generate Warden Key
-    // TEST - session key from 5.4.7.18019
+    // TEST - session key from 6.2.4.21355
     //k->SetHexStr("05EC9A527BD351928B3F3CB8367AA30B9172FB5C74210354ACD8D8E4AA22478D1F0A40E54854AEA0");
     // END TEST
     SHA1Randx WK(k->AsByteArray().get(), k->GetNumBytes());

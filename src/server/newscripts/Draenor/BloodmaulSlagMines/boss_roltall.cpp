@@ -22,7 +22,7 @@ enum Spells
 {
     //< shards
     SPELL_FIERY_BOULDER         = 153247,
-    //SPELL_FIERY_BOULDER_1       = 152741, // not exist at sniffs from 6.1.2 ?
+    //SPELL_FIERY_BOULDER_1       = 152741, // not exist at sniffs from 6.2.4 ?
     SPELL_FIERY_BOULDER_2       = 152850, // casted by NPC_FIERY_BOULDER_XXXX to self
     SPELL_FIERY_BOULDER_3       = 153058, // casted by NPC_FIERY_BOULDER_XXXX to self
     SPELL_FIERY_BOULDER_4       = 152742, // AT casted summon to boulder ground pos

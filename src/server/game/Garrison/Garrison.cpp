@@ -1360,7 +1360,7 @@ void Garrison::Follower::IncreaseFollowerItemLevel(SpellInfo const* spellInfo, P
     uint32 mv = spellInfo->Effects[0].MiscValue;
     uint32 mvb = spellInfo->Effects[0].MiscValueB;
 
-    // code for 6.2.2 - delete hardcoded cases by spellID after update
+    // code for 6.2.4 - delete hardcoded cases by spellID after update
     /*if (mv == 2 && mvb == 1) // increment weapon ilvl
     {
         if (PacketInfo.ItemLevelWeapon < 675)
@@ -1794,9 +1794,9 @@ The Garrison Cache next to your Town Hall accumulates  Garrison Resources (GR)
 at a rate of 1 GR every 10 minutes of real time (6 per hour),
 which works out to 144 GR every full day (6 x 24hrs = 144 GR).
 
-За 3-е суток и 10 часов будет достигнут лимит в 500 ресурсов.
+пїЅпїЅ 3-пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ 10 пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ 500 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 
-При покупке и использовании  Торговое соглашение: араккоа-изгои (продается в Танаанских джунглях) лимит склада становится равным 1000 ресурсов. = 6 суток 20 часов.
+пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ) пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 1000 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. = 6 пїЅпїЅпїЅпїЅпїЅ 20 пїЅпїЅпїЅпїЅпїЅ.
 */
 uint32 Garrison::GetResNumber() const
 {

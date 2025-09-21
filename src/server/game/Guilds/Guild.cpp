@@ -3212,18 +3212,18 @@ void Guild::_MoveItems(MoveItemData* pSrc, MoveItemData* pDest, uint32 splitedAm
         if (!_DoItemsMove(pSrc, pDest, false)) // Item could not be merged
         {
             // 6.2. Try to swap items
-            // 6.2.1. Initialize destination item
+            // 6.2.4. Initialize destination item
             if (!pDest->InitItem())
                 return;
 
-            // 6.2.2. Check rights to store item in source (opposite direction)
+            // 6.2.4. Check rights to store item in source (opposite direction)
             if (!pSrc->HasStoreRights(pDest))
                 return; // Player has no rights to store item in source (opposite direction)
 
             if (!pDest->HasWithdrawRights(pSrc))
                 return; // Player has no rights to withdraw item from destination (opposite direction)
 
-            // 6.2.3. Swap items (pDest->GetItem() != nullptr)
+            // 6.2.4. Swap items (pDest->GetItem() != nullptr)
             _DoItemsMove(pSrc, pDest, true);
         }
     }

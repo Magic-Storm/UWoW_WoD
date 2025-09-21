@@ -2444,6 +2444,7 @@ ArenaLog.ExtendedInfo = 0
 #        Description: Limit for bg and arena for item level
 #        Default:     524 for patch 5.4.2
 #                  or 530 for patch 5.4.7
+#                  or 21355 for patch 6.2.4
 
 PVP.ItemLevelCap = 524
 
