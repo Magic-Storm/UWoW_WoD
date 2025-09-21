@@ -25,6 +25,7 @@ namespace AuthHelper
     static std::vector<RealmBuildInfo> const ClientBuilds =
     {
         { 21355, 6, 2, 4, ' ' },
+        { 20726, 6, 2, 3, ' ' },
         { 20574, 6, 2, 2, 'b' },
         { 20490, 6, 2, 2, 'a' },
         { 20444, 6, 2, 2, ' ' },
